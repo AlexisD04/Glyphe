@@ -19,11 +19,12 @@ def authentification():
                 print_colored(" Error: user does not exist.\n")
                 is_connected = False
 
-            password = getpass(" password:")
-            if hashlib.sha256(password.encode()).hexdigest() != users[user]:
-                time.sleep(0.1)
-                print_colored(" Error: user's password is wrong.\n")
-                is_connected = False
+            else:
+                password = getpass(" password:")
+                if hashlib.sha256(password.encode()).hexdigest() != users[user]:
+                    time.sleep(0.1)
+                    print_colored(" Error: user's password is wrong.\n")
+                    is_connected = False
 
         clearConsole()
         print_colored(f" Access authorized\n Welcome {user}\n")

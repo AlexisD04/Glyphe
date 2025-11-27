@@ -1,6 +1,6 @@
 from os import system
 from core.utils import quit, define_cursor_color
-from whois import *
+from whois import whois
 
 # A refaire avec la sortie brute de whois
 

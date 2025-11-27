@@ -10,6 +10,13 @@ To launch the framework, run the following command in your terminal:
 
 A Python environment with all required modules is automatically activated when the framework starts.
 
+If this doesn't work, rename *framework* in *framework.py*, then
+
+```bash
+source framework_env/bin/activate
+python framework.py
+```
+
 ### AUTHENTIFICATION
 
 - **Username:** *guest*

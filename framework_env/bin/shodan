@@ -1,4 +1,4 @@
-#!/home/alexis/Documents/pen_test_framework/myenv/bin/python3
+#!/home/alexis/Documents/pen_test_framework/framework_env/bin/python3
 # EASY-INSTALL-ENTRY-SCRIPT: 'shodan==1.31.0','console_scripts','shodan'
 import re
 import sys
