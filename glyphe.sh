@@ -7,6 +7,11 @@ REQUIREMENTS="requirements.txt"
 if [ ! -d "$VENV" ]; then
     echo "Creation of the virtual environment..."
     python3 -m venv "$VENV"
+    
+    source framework_env/bin/activate
+    python -m ensurepip --upgrade
+    python -m pip install --upgrade pip
+    deactivate
 fi
 
 # Dépendances

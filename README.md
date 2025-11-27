@@ -72,12 +72,7 @@ toolSetAccess = [
 ]
 ```
 
-3. **Install dependencies** (if any) in the *framework_env* environment:
-
-```bash
-source framework_env/bin/activate
-pip install mymodule
-```
+3. **Add dependencies** (if any) in the *requirements.txt*:
 
 ## DEPENDENCIES & EXTERNAL CODE
 
