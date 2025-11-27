@@ -1,5 +1,4 @@
-from os import system
-from core.utils import quit
+from core.utils import quit, clearConsole
 from core.config import SHODAN_API_KEY
 import shodan
 
@@ -7,28 +6,29 @@ def shodan_tool():
     choix = 0
     try:
         while(choix != 3):
-            system('clear')
+            clearConsole(False)
             print_shodan_logo()
             print("\n 1. Shodan search")
             print(" 2. Host search")
             print(" 3. Quit")
 
-            choix = int(input("\n What do you want to do?:"))
+            try:
+                choix = int(input("\n What do you want to do?:"))
 
-            if(choix == 1):
-                shodan_search()
+                if(choix == 1):
+                    shodan_search()
 
-            elif(choix == 2):
-                host_search()
+                elif(choix == 2):
+                    host_search()
 
-            else:
-                system('clear')
+            except:
+                clearConsole(False)
                 print_shodan_logo()
 
     except KeyboardInterrupt:
         quit()
 
-    return None # Retour au menu1
+    return None
 
 def print_shodan_logo():
     print(r" _______           _______  ______   _______  _       ")

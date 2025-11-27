@@ -2,6 +2,7 @@ import time,hashlib,os
 from core.config import *
 from getpass import getpass
 from os import system
+from sys import stdout
 
 # Se connecter
 def authentification():
@@ -49,6 +50,13 @@ def print_logo():
     print_colored(" ########################")
     print_colored(" # PENTESTING FRAMEWORK #")
     print_colored(" ########################\n")
+    return None
+
+# Supprime n lignes
+def delete_lines(n=1):
+    for i in range(n):
+        stdout.write('\x1b[1A')
+        stdout.write('\x1b[2K')
     return None
 
 # Imprime avec couleurs

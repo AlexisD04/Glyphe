@@ -9,7 +9,7 @@ chmod +x glyphe.sh
 ./glyphe.sh
 ```
 
-A Python environment with all required modules is automatically created and loaded when the framework starts.
+A Python environment with all required modules is automatically created and loaded when the framework starts. (Make sure python3-venv and python3-pip are on their last version)
 
 ### AUTHENTIFICATION
 
@@ -29,6 +29,8 @@ To use the **shodan** tool, add your API key to the *config.py* file:
 SHODAN_API_KEY = "your_api_key_here"
 ```
 
+This framework changes your cursor's color. When the framework is closed, he will reaffect to your cursor to the color defined by DEFAULT_CURSOR_COLOR dans *config.py*.
+
 **Note**: Through the API, free Shodan accounts have limited access to data.
 
 ## FEATURES
@@ -39,7 +41,7 @@ SHODAN_API_KEY = "your_api_key_here"
 |-------------|-------------------------------------------------------------------------------------------------|----------------------------|
 | **Whois**   | Retrieves public registration details for a domain or IP address.                               | To improve                 |
 | **Shodan**  | Search engine for internet-connected devices. Identifies exposed systems and vulnerabilities.   | Requires API key           |
-| **HTTrack** | Website copier tool for offline browsing.                                                       | Next implementation        |
+| **Web copy** | Website copier tool for offline browsing.                                                       | To improve        |
 
 ### PLANNED FEATURES
 
@@ -78,4 +80,4 @@ toolSetAccess = [
 
 - [python-whois](https://github.com/relip/python-whois)
 - [shodan-python](https://github.com/achillean/shodan-python)
-- [pyhttrack (modified)](https://github.com/riodevnet/pyhttrack/tree/v1.1.3)
+- [pywebcopy](https://github.com/rajatomar788/pywebcopy

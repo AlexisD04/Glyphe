@@ -26,10 +26,12 @@ TOOLS = create_dict_tools()
 
 whois = TOOLS["whois_tool"]
 shodan = TOOLS["shodan_tool"]
+webcopy = TOOLS["webcopy_tool"]
 
 toolSetReconnaissance = [
     ("Whois", whois),
     ("Shodan", shodan),
+    ("Web copy", webcopy),
     ("Leave", lambda: None)
 ]
 

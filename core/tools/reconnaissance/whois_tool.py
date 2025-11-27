@@ -1,11 +1,10 @@
-from os import system
-from core.utils import quit, define_cursor_color
+from core.utils import quit, clearConsole
 from whois import whois
 
 # A refaire avec la sortie brute de whois
 
 def whois_tool():
-    system('clear')
+    clearConsole(False)
     print_whois_logo()
 
     try:
@@ -24,7 +23,7 @@ def whois_tool():
         print(f"\n Error fetching WHOIS information: {e}")
 
     input("\n Leave?")
-    whois_tool()
+    whois_tool() # Appel récursif attention !!!
     return None
 
 def print_whois_logo():
