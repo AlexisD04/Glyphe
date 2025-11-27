@@ -37,11 +37,11 @@ This framework changes your cursor's color. When the framework is closed, he wil
 
 ### AVAILABLE TOOLS
 
-| Tool        | Description                                                                                     | Status                     |
+| Tool        | Description                                                                                     | Note                       |
 |-------------|-------------------------------------------------------------------------------------------------|----------------------------|
 | **Whois**   | Retrieves public registration details for a domain or IP address.                               | To improve                 |
 | **Shodan**  | Search engine for internet-connected devices. Identifies exposed systems and vulnerabilities.   | Requires API key           |
-| **Web copy** | Website copier tool for offline browsing.                                                       | To improve        |
+| **Web copy** | Website copier tool for offline browsing.                                                      | To improve                 |
 
 ### PLANNED FEATURES
 
