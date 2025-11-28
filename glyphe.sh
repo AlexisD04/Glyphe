@@ -1,4 +1,5 @@
 #!/bin/bash
+set -e
 
 VENV="framework_env"
 REQUIREMENTS="requirements.txt"
