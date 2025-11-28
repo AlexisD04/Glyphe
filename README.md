@@ -9,7 +9,9 @@ chmod +x glyphe.sh
 ./glyphe.sh
 ```
 
-A Python environment with all required modules is automatically created and loaded when the framework starts. (Make sure python3-venv and python3-pip are on their lastest version.)
+A Python environment with all required modules is automatically created and loaded when the framework starts.
+Make sure python3-venv and python3-pip are on their lattest version.
+If an error occurs while the environment is created, you may need to remove the *framework_env* file before trying again.
 
 ### AUTHENTIFICATION
 
