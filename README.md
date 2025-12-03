@@ -14,7 +14,7 @@ Make sure python3-venv and python3-pip are on their lattest version.
 If an error occurs while the environment is created, you may need to remove the *framework_env* file before trying again.
 
 If the instruction returns
-```bash
+```
 cannot execute: command not found
 ```
 
