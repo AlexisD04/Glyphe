@@ -20,6 +20,9 @@ def webcopy_tool():
             if choix in ["1","2"]:
                 copy(int(choix))
 
+            elif choix == "3":
+                return None
+
             else:
                 clearConsole(False)
                 print_webcopy_logo()

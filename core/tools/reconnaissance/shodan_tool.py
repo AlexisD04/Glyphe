@@ -20,6 +20,9 @@ def shodan_tool():
 
                 elif(choix == 2):
                     host_search()
+                
+                elif(choix == 3):
+                    return None
 
             except:
                 clearConsole(False)

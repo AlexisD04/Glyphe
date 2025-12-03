@@ -27,6 +27,8 @@ TOOLS = create_dict_tools()
 whois = TOOLS["whois_tool"]
 shodan = TOOLS["shodan_tool"]
 webcopy = TOOLS["webcopy_tool"]
+ping = TOOLS["ping_tool"]
+traceroute = TOOLS["traceroute_tool"]
 
 toolSetReconnaissance = [
     ("Whois", whois),
@@ -36,6 +38,8 @@ toolSetReconnaissance = [
 ]
 
 toolSetScanning = [
+    ("Ping", ping),
+    ("Traceroute", traceroute),
     ("Leave", lambda: None)
 ]
 
