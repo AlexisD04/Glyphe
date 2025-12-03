@@ -22,7 +22,7 @@ def shodan_tool():
                     host_search()
                 
                 elif(choix == 3):
-                    return None
+                    return 1
 
             except:
                 clearConsole(False)
@@ -97,7 +97,7 @@ def shodan_search():
         print(f" Error: {e}")
 
     input("\n Leave?")
-    return None
+
 
 def host_search():
     api = shodan.Shodan(SHODAN_API_KEY)
@@ -115,4 +115,3 @@ def host_search():
         print(f" Error: {e}")
     
     input("\n Leave?")
-    return None

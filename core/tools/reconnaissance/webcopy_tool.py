@@ -21,7 +21,7 @@ def webcopy_tool():
                 copy(int(choix))
 
             elif choix == "3":
-                return None
+                return 1
 
             else:
                 clearConsole(False)
@@ -30,12 +30,17 @@ def webcopy_tool():
     except KeyboardInterrupt:
         quit()
 
-    return None
+    return 1
 
 def copy(choix):
     print()
     try:
         url = input(" URL:")
+
+        while url[0:7] != "http://" and url[0:8] != "https://":
+            print(" Please use the \"http(s)://\" format.\n")
+            url = input(" URL:")
+
         project_folder=DIR
         project_name = input(" Save as:")
 

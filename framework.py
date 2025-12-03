@@ -1,14 +1,14 @@
 #!framework_env/bin/python3
 from core.utils import define_cursor_color, clearConsole, authentification
-from core.menu import mainMenu
+from core.cmd import mainCmd
 
 def main():
     define_cursor_color("white")
-    clearConsole(False)
-
-    authentification()
-
-    mainMenu()
+    
+    while True:
+        clearConsole(False)
+        #authentification()
+        mainCmd()
 
     return None
 

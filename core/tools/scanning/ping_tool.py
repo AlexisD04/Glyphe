@@ -19,7 +19,7 @@ def ping_tool():
     except KeyboardInterrupt:
         quit()
 
-    if host == "" : return None
+    if host == "" : return 1
     
     try:
         ping(host)
@@ -29,7 +29,6 @@ def ping_tool():
 
     input("\n Leave?")
     ping_tool() # Appel récursif attention !!!
-    return None
 
 def print_ping_logo():
     print(r" _______ _________ _        _______ ")

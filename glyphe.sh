@@ -15,4 +15,4 @@ if [ -f "requirements.txt" ]; then
     "$VENV/bin/pip" install -r requirements.txt
 fi
 
-"$VENV/bin/python" framework.py
+sudo "$VENV/bin/python" framework.py

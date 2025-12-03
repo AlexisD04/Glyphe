@@ -1,0 +1,19 @@
+ 
+ The following commands are available.
+
+ GENERAL
+
+ help: Display this help.
+ clear: Reset the console's appearance.
+ disconnect: Leave the current profile, you will have to reenter ID and password.
+ quit: Close the framework.
+
+
+ TOOLS
+
+ simple: Launch a simplified version of the framework, tools will be less customizable.
+ whois: Launch whois tool
+ shodan: Launch shodan tool
+ webcopy: Launch webcopy tool
+ ping: Launch ping tool
+ traceroute: Launch traceroute tool

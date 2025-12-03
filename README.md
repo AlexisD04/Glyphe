@@ -1,4 +1,4 @@
-# PEN-TESTING FRAMEWORK
+# GLYPHE
 
 ## QUICK START
 
@@ -32,6 +32,10 @@ dos2unix glyphe.sh
 
 ### NAVIGATION
 
+Once logged into the framework, type *help* to get a list of available commands.
+
+If you decide to use the simple mode, you can navigate like this :
+
 - Select a tool by entering its corresponding number.
 - Use the *leave* option to exit the current menu or close the framework.
 
@@ -62,7 +66,7 @@ This framework changes your cursor's color. When the framework is closed, he wil
 ### PLANNED FEATURES
 
 - Additional pen-testing tools
-- Rework of the input command style
+- More commands
 - More options on the tools
 - Output saving to files
 - Secure/non-secure profiles for project isolation

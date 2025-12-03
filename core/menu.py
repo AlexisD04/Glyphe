@@ -43,8 +43,7 @@ def mainMenu():
         choice = getChoice(menu)
 
         if choice == len(menu)-1:
-            quit()
-            return None
+            return 1
 
         menu = menu[choice][1]
         choice = -1
@@ -52,5 +51,3 @@ def mainMenu():
         while choice != len(menu)-1:
             choice = getChoice(menu)
             menu[choice][1]()
-
-    return None

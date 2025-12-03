@@ -6,8 +6,7 @@ from sys import stdout
 
 # Se connecter
 def authentification():
-    print_colored(" Launching pentesting framework...")
-    print_colored(" Authentification")
+    print_colored("\n Authentification")
     print_colored("\n (Try guest:guest)")
 
     is_connected = False

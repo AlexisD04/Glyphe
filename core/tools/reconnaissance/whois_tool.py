@@ -12,7 +12,7 @@ def whois_tool():
     except KeyboardInterrupt:
         quit()
 
-    if domain == "" : return None
+    if domain == "" : return 1
     
     try:
         info = whois(domain)
@@ -24,7 +24,6 @@ def whois_tool():
 
     input("\n Leave?")
     whois_tool() # Appel récursif attention !!!
-    return None
 
 def print_whois_logo():
     print(r"                   _______ _________ _______ ")

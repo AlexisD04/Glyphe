@@ -24,7 +24,7 @@ def traceroute_tool():
     except KeyboardInterrupt:
         quit()
 
-    if host == "" : return None
+    if host == "" : return 1
     
     try:
         timeout = int(input(" Timeout (in s):"))
@@ -36,7 +36,6 @@ def traceroute_tool():
 
     input("\n Leave?")
     traceroute_tool() # Appel récursif attention !!!
-    return None
 
 def print_traceroute_logo():
     print(r"_________ _______  _______  _______  _______  _______  _______          _________ _______ ")
