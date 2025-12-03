@@ -9,7 +9,21 @@ chmod +x glyphe.sh
 ./glyphe.sh
 ```
 
-A Python environment with all required modules is automatically created and loaded when the framework starts. (Make sure python3-venv and python3-pip are on their last version)
+A Python environment with all required modules is automatically created and loaded when the framework starts.
+Make sure python3-venv and python3-pip are on their lattest version.
+If an error occurs while the environment is created, you may need to remove the *framework_env* file before trying again.
+
+If the instruction returns
+```bash
+cannot execute: command not found
+```
+
+Try:
+```bash
+apt-get install dos2unix
+dos2unix glyphe.sh
+./glyphe.sh
+```
 
 ### AUTHENTIFICATION
 
